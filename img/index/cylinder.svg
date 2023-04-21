@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+    width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+    <defs>
+    </defs>
+    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+        <!-- Cylinder -->
+            <polygon points="42.76,45.77 56.38,56.8 7.76,89 29.14,34.74 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(251,175,57); fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+            <polyline points="7.76,89 25.71,77.11 17.85,63.4 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(241,98,108); fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+            <polygon points="23.49,49.07 35.76,70.46 45.8,63.8 29.14,34.74 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(241,98,108); fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+            <path
+                d="M 7.756 90 c -0.224 0 -0.447 -0.075 -0.629 -0.223 c -0.339 -0.274 -0.461 -0.738 -0.301 -1.144 l 21.383 -54.258 c 0.117 -0.296 0.368 -0.52 0.676 -0.601 c 0.307 -0.082 0.635 -0.011 0.884 0.19 l 27.24 22.058 c 0.248 0.2 0.385 0.507 0.37 0.825 c -0.016 0.318 -0.182 0.61 -0.447 0.786 L 8.308 89.834 C 8.14 89.945 7.948 90 7.756 90 z M 29.569 36.378 L 9.85 86.414 L 54.69 56.72 L 42.13 46.549 l 0 0 L 29.569 36.378 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(40,66,104); fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            <path
+                d="M 35.756 71.458 c -0.077 0 -0.154 -0.009 -0.23 -0.027 c -0.269 -0.063 -0.5 -0.235 -0.637 -0.476 L 22.625 49.566 c -0.151 -0.264 -0.174 -0.581 -0.063 -0.863 l 5.646 -14.327 c 0.141 -0.357 0.474 -0.603 0.857 -0.631 c 0.389 -0.028 0.749 0.167 0.94 0.5 L 46.67 63.308 c 0.263 0.457 0.125 1.04 -0.315 1.331 l -10.046 6.653 C 36.144 71.401 35.951 71.458 35.756 71.458 z M 24.599 48.989 l 11.494 20.046 l 8.375 -5.547 L 29.307 37.045 L 24.599 48.989 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(40,66,104); fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            <path
+                d="M 7.756 90 c -0.224 0 -0.447 -0.075 -0.629 -0.223 c -0.339 -0.274 -0.461 -0.738 -0.301 -1.144 l 10.09 -25.604 c 0.141 -0.358 0.474 -0.604 0.857 -0.631 c 0.388 -0.03 0.749 0.167 0.94 0.5 l 7.864 13.714 c 0.262 0.457 0.124 1.04 -0.315 1.331 L 8.308 89.834 C 8.14 89.945 7.948 90 7.756 90 z M 18.014 65.699 L 9.85 86.414 l 14.526 -9.62 L 18.014 65.699 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(40,66,104); fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />                                    
+    </g>
+    </svg>

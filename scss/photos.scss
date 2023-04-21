@@ -1,0 +1,116 @@
+@import "./mixins";
+@import "./variables";
+
+.fields {
+
+    .fields__slider {
+        margin: 0 auto;
+        @include arrows;
+    }
+
+    .field {
+        text-align: center;
+        padding: 0 30px;
+
+        img {
+            max-width: 90%;
+            display: inline-block;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.additional-service {
+    .additional-service__heading {
+        margin-top: 70px;
+    }
+
+    .additional-service__items {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .additional-service__item {
+        max-width: 350px;
+    }
+
+    .additional-service__item-name {
+        @include subheading;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .additional-service__item-text {
+        @include plainText;
+        margin-top: 20px;
+    }
+}
+
+.instructors {
+    .instructors__heading {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .instructors__slider {
+        margin: 0 auto;
+        @include arrows;
+
+        .slick-prev:before {
+            left: 10%;
+        }
+
+        .slick-next:before {
+            right: 10%;
+        }
+    }
+
+    .instructor {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+
+        img {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        figcaption {
+            margin-top: 15px;
+        }
+
+        margin-bottom: 40px;
+        z-index: 1;
+    }
+
+    .instructor-hover__message {
+        max-width: 400px;
+        background-color: $smoke;
+        border-radius: 20px;
+        padding: 10px 20px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        display: none;
+    }
+
+    .instructor-hover__message-img {
+        position: absolute;
+        left: -80px;
+        bottom: -50px;
+        z-index: -1;
+    }
+}
+
+.order {
+    margin-top: 50px;
+}

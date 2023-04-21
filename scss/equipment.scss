@@ -1,0 +1,179 @@
+@import "./variables";
+@import "./mixins";
+
+.equipment {
+    position: relative;
+    min-height: 170vh;
+
+    .equipment__heading {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .equipment__text {
+        text-align: center;
+        margin-top: 40px;
+        @include subheading;
+        font-weight: bold;
+    }
+
+    .equipment__descr {
+        text-align: center;
+        margin-top: 30px;
+        @include plainText;
+    }
+
+    .equipment__item {
+        position: absolute;
+    }
+
+    .equipment__item-caption {
+        text-align: center;
+    }
+
+    .equipment__item-marker {
+        top: 200px;
+        left: 0px;
+
+        img {
+            width: 330px;
+            height: 300px;
+        }
+
+        figcaption {
+            position: relative;
+            top: -90px;
+            left: -10px;
+        }
+    }
+
+    .equipment__item-armor {
+        top: 550px;
+        left: 50px;
+
+        img {
+            width: 200px;
+            height: 250px;
+        }
+
+        figcaption {
+            position: relative;
+            left: -20px;
+        }
+        .equipment__hand-pointer {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -40px;
+            right: 30px;
+        }
+    }
+
+    .equipment__item-mask {
+        top: 280px;
+        right: 30px;
+
+        img {
+            width: 200px;
+            height: 170px;
+        }
+    }
+
+    .equipment__item-gloves {
+        right: 0px;
+        top: 600px;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .equipment__item-granade {
+        text-align: center;
+        right: 0px;
+        top: 1280px;
+        display: none;
+
+        figcaption {
+            position: relative;
+            top: 20px;
+            max-width: 300px;
+        }
+    }
+
+    .equipment__item-move {
+        left: 750px;
+        top: 1035px;
+        display: none;
+    }
+
+    .equipment__img {
+        position: absolute;
+        left: 300px;
+        top: 480px;
+    }
+    
+    .equipment__item-outline {
+        transition: all .4s ease;
+        opacity: 0;
+    }
+}
+
+.additional-equipment {
+    .additional-equipment__heading {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .additional-equipment__text {
+        @include subheading;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .additional-equipment__caption {
+        margin-top: 30px;
+        @include plainText;
+        text-align: center;
+    }
+
+    .additional-equipment__slider {
+        margin-top: 40px !important;
+        margin-right: 50px !important;
+        max-width: 1000px;
+        margin: 0 auto;
+        @include arrows;
+
+        .slick-prev:before,
+        .slick-next:before {
+            top: 42%;
+        }
+
+        .slick-prev:before {
+            left: -10%;
+        }
+
+        .slick-next:before {
+            right: -5%;
+        }
+    }
+
+    .additional-equipment__item {
+        max-width: 320px;
+        min-height: 460px;
+        border: 3px solid $yellow;
+        padding: 10px;
+        margin-right: 50px;
+    }
+
+    .additional-equipment__item-img {
+        height: 280px;
+    }
+
+    .additional-equipment__item-name {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

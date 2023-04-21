@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+.fields .fields__slider {
+  margin: 0 auto;
+}
+.fields .fields__slider .slick-prev,
+.fields .fields__slider .slick-next {
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 0 !important;
+  height: 0 !important;
+}
+.fields .fields__slider .slick-prev:before,
+.fields .fields__slider .slick-next:before {
+  content: "";
+  cursor: pointer;
+  background-size: cover;
+  display: table;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+}
+.fields .fields__slider .slick-prev:before {
+  left: 0;
+  z-index: 100;
+  background-image: url("../img/left-arrow.svg");
+}
+.fields .fields__slider .slick-next:before {
+  right: 0;
+  background-image: url("../img/right-arrow.svg");
+}
+.fields .field {
+  text-align: center;
+  padding: 0 30px;
+}
+.fields .field img {
+  max-width: 90%;
+  display: inline-block;
+}
+.fields .field figcaption {
+  margin-top: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.additional-service .additional-service__heading {
+  margin-top: 70px;
+}
+.additional-service .additional-service__items {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.additional-service .additional-service__item {
+  max-width: 350px;
+}
+.additional-service .additional-service__item-name {
+  font-size: 24px;
+  font-weight: 400;
+  color: #373A3C;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media (max-width: 410px) {
+  .additional-service .additional-service__item-name {
+    font-size: 22px;
+  }
+}
+.additional-service .additional-service__item-text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #373A3C;
+  margin-top: 20px;
+}
+
+.instructors .instructors__heading {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.instructors .instructors__slider {
+  margin: 0 auto;
+}
+.instructors .instructors__slider .slick-prev,
+.instructors .instructors__slider .slick-next {
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 0 !important;
+  height: 0 !important;
+}
+.instructors .instructors__slider .slick-prev:before,
+.instructors .instructors__slider .slick-next:before {
+  content: "";
+  cursor: pointer;
+  background-size: cover;
+  display: table;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+}
+.instructors .instructors__slider .slick-prev:before {
+  left: 0;
+  z-index: 100;
+  background-image: url("../img/left-arrow.svg");
+}
+.instructors .instructors__slider .slick-next:before {
+  right: 0;
+  background-image: url("../img/right-arrow.svg");
+}
+.instructors .instructors__slider .slick-prev:before {
+  left: 10%;
+}
+.instructors .instructors__slider .slick-next:before {
+  right: 10%;
+}
+.instructors .instructor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+.instructors .instructor img {
+  display: inline-block;
+  padding: 20px;
+}
+.instructors .instructor figcaption {
+  margin-top: 15px;
+}
+.instructors .instructor-hover__message {
+  max-width: 400px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  display: none;
+}
+.instructors .instructor-hover__message-img {
+  position: absolute;
+  left: -80px;
+  bottom: -50px;
+  z-index: -1;
+}
+
+.order {
+  margin-top: 50px;
+}/*# sourceMappingURL=photos.css.map */

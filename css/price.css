@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+body {
+  background-color: #f5f5f5;
+}
+
+.rates {
+  padding-bottom: 70px;
+}
+.rates .rates__heading {
+  margin-top: 60px;
+}
+.rates .rate {
+  margin-top: 90px;
+}
+.rates .rate__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.rates .rate__name {
+  font-size: 32px;
+  font-weight: bold;
+}
+.rates .rate__descr {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #373A3C;
+  max-width: 490px;
+}
+@media (max-width: 410px) {
+  .rates .rate__descr {
+    font-size: 22px;
+  }
+}
+.rates .rate__price {
+  font-weight: bold;
+  font-size: 54px;
+  position: relative;
+  bottom: 20px;
+}
+.rates .rate__content {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.rates .rate__descr-list {
+  position: relative;
+  left: 25px;
+}
+.rates .rate__descr-item {
+  font-weight: bold;
+}
+.rates .rate__illustrated-items {
+  display: flex;
+}
+.rates .rate__illustrated-item {
+  margin-left: 40px;
+  text-align: center;
+}
+.rates .rate__illustrated-item img {
+  min-width: 80px;
+  min-height: 80px;
+}
+.rates .rate__illustrated-item figcaption {
+  text-align: center;
+  max-width: 165px;
+}
+
+.cost {
+  background-color: #151515;
+  color: #FFFFFF;
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+.cost .cost__content {
+  display: flex;
+}
+.cost .calculator {
+  width: 590px;
+  border: 3px solid #FBAF39;
+  border-radius: 5px;
+  margin-right: 90px;
+}
+.cost .calculator__fields {
+  padding: 20px;
+}
+.cost .calculator__field {
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  color: #373A3C;
+  color: #FBAF39;
+  margin-bottom: 35px;
+  position: relative;
+}
+.cost .calculator__field-label {
+  margin-right: 40px;
+  width: 250px;
+}
+.cost .calculator__field-items {
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+}
+.cost .calculator__field-item {
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin-right: 10px;
+  padding: 0 10px 5px;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  background-color: #151515;
+  font-size: 20px;
+  font-weight: 400;
+  color: #373A3C;
+  color: #f5f5f5;
+  transition: 0.2s all ease-in;
+}
+.cost .calculator__field-item:last-child {
+  margin-right: 0;
+}
+.cost .calculator__field-item:hover {
+  background-color: rgba(245, 245, 245, 0.3);
+}
+.cost .participants__field {
+  max-width: 250px;
+  height: 40px;
+  font-weight: bold;
+  cursor: auto;
+}
+.cost .participants__field-warning {
+  font-size: 16px;
+  color: #EE3A64;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  display: none;
+}
+.cost .place__item {
+  width: 120px;
+}
+.cost .day__item {
+  width: 120px;
+}
+.cost .total-cost__content {
+  display: flex;
+  padding: 20px;
+}
+.cost .calculator__line {
+  width: 100%;
+  height: 3px;
+  background-color: #FBAF39;
+}
+.cost .total-cost__heading {
+  color: #FBAF39;
+  margin-right: 110px;
+}
+.cost .cost__descr {
+  max-width: 510px;
+}
+.cost .cost__heading {
+  margin-top: 0;
+  text-align: left;
+}
+.cost .cost__text-attention {
+  margin-top: 15px;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+.cost .cost__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #373A3C;
+  max-width: 510px;
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+.cost .cost__btn {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #373A3C;
+  border-radius: 10px;
+  padding: 2px 20px 5px;
+  transition: all 0.3s ease-out;
+  background-color: #EE3A64;
+  color: #FFFFFF;
+  border: 1px solid #EE3A64;
+  cursor: pointer;
+}
+@media (max-width: 410px) {
+  .cost .cost__btn {
+    font-size: 22px;
+  }
+}
+.cost .cost__btn:hover {
+  background-color: #151515;
+  color: #EE3A64;
+}
+
+footer {
+  border-top: 1px solid #f5f5f5;
+  margin-top: 0;
+}/*# sourceMappingURL=price.css.map */

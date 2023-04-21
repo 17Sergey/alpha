@@ -1,0 +1,127 @@
+@import "./variables";
+@import "./mixins";
+
+@media (max-width: 1020px) {
+    .cost {
+        .cost__content {
+            .cost__heading {
+                text-align: center;
+            }
+
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cost__descr {
+            order: -1;
+        }
+
+        .calculator {
+            margin-top: 60px;
+            margin-right: 0;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 836px) {
+    .rates {
+        .rate__descr {
+            max-width: 400px;
+        }
+
+        .rate__illustrated-item {
+            margin-left: 10px;
+            max-width: 110px;
+
+            figcaption {
+                @include plainText;
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .rates {
+        .rate {
+            margin-top: 70px;
+        }
+
+        .rate__heading {
+            flex-direction: column;
+
+            .rate__price {
+                margin-top: 50px;
+            }
+        }
+
+        .rate__content {
+            flex-direction: column;
+
+            .rate__illustrated-items {
+                margin-top: 50px;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .rate__illustrated-item {
+                    margin-right: 30px;
+                    margin-bottom: 40px;
+                    width: 45%;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    figcaption {
+                        @include plainText;
+                    }
+                }
+            }
+        }
+    }
+
+    .cost {
+        .calculator {
+            text-align: center;
+            margin-top: 60px;
+            margin-right: 0;
+            max-width: 90%;
+
+            .calculator__fields {
+                padding: 20px 0;
+
+                .calculator__field {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .calculator__field-label {
+                        width: auto;
+                        margin-right: 0;
+                    }
+
+                    .calculator__field-item {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .cost__text-attention {
+            font-size: 28px;
+        }
+
+        .total-cost {
+            @include plainText;
+            color: $white;
+
+            .total-cost__heading {
+                margin-right: 20px;
+            }
+        }
+    }
+}

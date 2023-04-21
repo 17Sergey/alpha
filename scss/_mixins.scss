@@ -1,0 +1,223 @@
+@import "./variables";
+
+@mixin font {
+    font-family: $fontName;
+    color: $black;
+    font-size: 24px;
+}
+
+@mixin heading {
+    @media (max-width: 410px) {
+        font-size: 32px;
+    }
+
+    font-size: 40px;
+    font-weight: bold;
+    color: $yellow;
+    text-align: center;
+}
+
+@mixin subheading {
+    @media (max-width: 410px) {
+        font-size: 22px;
+    }
+
+    font-size: 24px;
+    font-weight: 400;
+    color: $black;
+}
+
+@mixin plainText {
+    font-size: 20px;
+    font-weight: 400;
+    color: $black;
+}
+
+@mixin container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@mixin logo {
+    width: 150px;
+    height: 50px;
+}
+
+@mixin header {
+    background-color: $blackbg;
+    color: $white;
+    padding: 10px 0;
+    overflow: hidden;
+
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__menu a {
+        padding: 5px 15px;
+    }
+
+    .header__menu a:last-child {
+        padding-right: 0;
+    }
+
+    .header__burger {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 15px;
+        z-index: 200;
+        display: none;
+    }
+}
+
+@mixin btn {
+    text-align: center;
+    @include subheading;
+    border-radius: 10px;
+    padding: 2px 20px 5px;
+    transition: all .3s ease-out;
+}
+
+@mixin arrows {
+
+    .slick-prev,
+    .slick-next {
+        cursor: pointer;
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+
+    .slick-prev:before,
+    .slick-next:before {
+        content: "";
+        cursor: pointer;
+        background-size: cover;
+        display: table;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+    }
+
+    .slick-prev:before {
+        left: 0;
+        z-index: 100;
+        background-image: url("../img/left-arrow.svg");
+    }
+
+    .slick-next:before {
+        right: 0;
+        background-image: url("../img/right-arrow.svg");
+    }
+}
+
+@mixin order {
+    max-width: 1000px;
+    min-height: 350px;
+    background-color: $pink;
+    border-radius: 35px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding-bottom: 20px;
+    color: $white;
+
+    .order__heading {
+        text-align: center;
+        color: $white;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .order__text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .order__form {
+        margin-top: 50px;
+    }
+
+    .form__fields {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: "Oswald";
+
+        input[type="text"],
+        .order__btn {
+            width: 250px;
+            font-family: "Oswald";
+            font-size: 24px;
+            padding: 5px;
+            background-color: $smoke;
+            border: none;
+            margin: 10px;
+        }
+
+        .order__btn {
+            background-color: $yellow;
+            text-align: left;
+            color: $white;
+        }
+    }
+
+    @media (max-width: 670px) {
+        .form__fields {
+            flex-direction: column;
+            align-items: center;
+
+            input[type="text"],
+            .order__btn {
+                margin: 10px 0;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@mixin footer {
+    margin-top: 120px;
+    background-color: $blackbg;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+    }
+
+    .footer__menu {
+        nav {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .footer__logo img {
+        margin-top: 10px;
+        position: relative;
+        left: -15px;
+    }
+
+    .footer__info p {
+        margin: 0;
+        margin-bottom: 10px;
+        @include plainText;
+        color: $white;
+    }
+}

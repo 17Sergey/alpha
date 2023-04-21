@@ -1,0 +1,154 @@
+@import "./variables";
+@import "./mixins";
+
+
+
+@media (max-width: 1100px) {
+    .additional-service {
+
+        .additional-service__items {
+            margin-top: 50px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            .additional-service__item {
+                text-align: center;
+                margin-bottom: 50px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet query */
+
+@media (max-width: 836px) {
+
+    .fields {
+        .fields__slider {
+            max-width: 90%;
+
+            .slick-prev:before,
+            .slick-next:before {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    .instructors {
+        .instructors__slider {
+            max-width: 90%;
+
+            .slick-prev:before,
+            .slick-next:before {
+                height: 40px;
+                width: 40px;
+            }
+
+            .slick-prev:before {
+                left: -7%;
+            }
+
+            .slick-next:before {
+                right: -7%;
+            }
+            .instructor-hover__message {
+                display: none !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 610px) {
+    .fields {
+        .fields__slider {
+
+            .slick-prev:before,
+            .slick-next:before {
+                transform: translateY(-150%);
+            }
+
+            .slick-prev:before {
+                left: 30%;
+            }
+
+            .slick-next:before {
+                right: 30%;
+            }
+        }
+    }
+    .instructors {
+        .instructors__heading {
+            margin-top: 50px;
+        }
+        .instructor {
+            padding-top: 0;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .fields {
+        .fields__heading {
+            margin-bottom: 0;
+        }
+
+        .fields__slider {
+            max-width: 100%;
+
+            .slick-prev:before,
+            .slick-next:before {
+                top: 100%;
+            }
+
+            .slick-prev:before {
+                left: 30%;
+            }
+
+            .slick-next:before {
+                right: 30%;
+            }
+
+            .field {
+                padding: 0;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+/* Mobile query */
+
+@media (max-width: 410px) {
+    .instructors {
+        .instructors__slider {
+            max-width: 90%;
+
+            .slick-prev:before,
+            .slick-next:before {
+                height: 40px;
+                width: 40px;
+                transform: translateY(-160%);
+            }
+
+            .slick-prev:before {
+                left: -10%;
+            }
+
+            .slick-next:before {
+                right: -10%;
+            }
+
+            .instructor {
+                figcaption {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

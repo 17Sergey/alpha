@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Common styles -->
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="css/price.css">
+
+    <!-- Media queries -->
+    <link rel="stylesheet" href="css/price-media.css">
+    <link rel="stylesheet" href="css/common-media.css">
+
+    <title>Цены</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="img/logo.svg" alt="" class="logo">
+                </div>
+                <nav class="header__menu">
+                    <a href="index.html" class="header__link">Главная</a>
+                    <a href="equipment.html" class="header__link">Экипировка</a>
+                    <a href="#" class="header__link active">Цены</a>
+                    <a href="photos.html" class="header__link">Фото</a>
+                </nav>
+                <div class="header__burger">
+                    <img src="img/burger-menu.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="rates">
+            <div class="container">
+                <h2 class="rates__heading heading">Тарифные планы</h2>
+                <div class="rate">
+                    <div class="rate__heading">
+                        <div class="rate__heading-wrapper">
+                            <div class="rate__name">Тариф "Стандарт"</div>
+                            <div class="rate__descr">В стоимость программы включено все необходимое для организации:
+                            </div>
+                        </div>
+                        <div class="rate__price">40 руб/чел.</div>
+                    </div>
+                    <div class="rate__content">
+                        <ul class="rate__descr-list">
+                            <li class="rate__descr-item">проведение сценариев</li>
+                            <li class="rate__descr-item">использование игровых полей</li>
+                            <li class="rate__descr-item">работа инструктора</li>
+                            <li class="rate__descr-item">прокат экипировки</li>
+                            <li class="rate__descr-item">500 шаров / чел.</li>
+                        </ul>
+                        <div class="rate__illustrated-items">
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/clock.svg" alt="">
+                                <figcaption>2 - 2.5 часа </figcaption>
+                            </figure>
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/cake.svg" alt="">
+                                <figcaption>Именинник играет бесплатно </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="rate__heading">
+                        <div class="rate__heading-wrapper">
+                            <div class="rate__name">Тариф "Премиум"</div>
+                            <div class="rate__descr">В стоимость программы включено все необходимое для организации:
+                            </div>
+                        </div>
+                        <div class="rate__price">70 руб/чел.</div>
+                    </div>
+                    <div class="rate__content">
+                        <ul class="rate__descr-list">
+                            <li class="rate__descr-item">проведение сценариев</li>
+                            <li class="rate__descr-item">использование игровых полей</li>
+                            <li class="rate__descr-item">работа инструктора</li>
+                            <li class="rate__descr-item">прокат экипировки</li>
+                            <li class="rate__descr-item">1000 шаров / чел.</li>
+                            <li class="rate__descr-item">маска повышенного комфорта</li>
+                            <li class="rate__descr-item">граната с краской</li>
+                        </ul>
+                        <div class="rate__illustrated-items">
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/mask.svg" alt="">
+                                <figcaption>Маска повышенного комфрорта</figcaption>
+                            </figure>
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/granade.svg" alt="">
+                                <figcaption>Граната с краской</figcaption>
+                            </figure>
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/clock.svg" alt="">
+                                <figcaption>2 - 2.5 часа </figcaption>
+                            </figure>
+                            <figure class="rate__illustrated-item">
+                                <img src="img/price/cake.svg" alt="">
+                                <figcaption>Именинник играет бесплатно </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cost">
+            <div class="container">
+                <div class="cost__content">
+                    <div class="calculator">
+                        <div class="calculator__fields">
+                            <div class="calculator__field">
+                                <label for="participants" class="calculator__field-label">Введите количество
+                                    участников</label>
+                                <input type="text" id="participants" class="calculator__field-item participants__field">
+                                <span class="participants__field-warning">Пожалуйста, введите положительное число</span>
+                            </div>
+                            <div class="calculator__field">
+                                <div class="calculator__field-label place__heading">Выберите тип площадки</div>
+                                <div class="calculator__field-items place__items">
+                                    <div class="calculator__field-item place__item">Открытая</div>
+                                    <div class="calculator__field-item place__item">Закрытая</div>
+                                </div>
+                            </div>
+                            <div class="calculator__field">
+                                <div class=" calculator__field-label day__heading">В какой день Вы планируете отдых
+                                </div>
+                                <div class="calculator__field-items day__items">
+                                    <div class="calculator__field-item day__item">Будний</div>
+                                    <div class="calculator__field-item day__item">Выходной</div>
+                                </div>
+                            </div>
+                            <div class="calculator__field">
+                                <div class="calculator__field-label balls-amount__heading">Какое количество шаров Вам
+                                    нужно?</div>
+                                <div class="calculator__field-items balls-amount__items">
+                                    <div class="calculator__field-item balls-amount__item">200</div>
+                                    <div class="calculator__field-item balls-amount__item">300</div>
+                                    <div class="calculator__field-item balls-amount__item">500</div>
+                                    <div class="calculator__field-item balls-amount__item">1000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-cost">
+                            <div class="calculator__line"></div>
+                            <div class="total-cost__content">
+                                <div class="total-cost__heading">Итоговая стоимость:</div>
+                                <div class="total-cost__value">0 BYN</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost__descr">
+                        <h2 class="cost__heading heading">Стоимость</h2>
+                        <div class="cost__text-attention">Время игры не ограничено – играйте пока есть шары !</div>
+                        <div class="cost__text">200 стартовых шаров хватает на 1-1,5 часа игры*. Когда они закончатся,
+                            просто
+                            докупите их по специальной цене 12 рублей за 100 шаров и продолжайте сражение. * 500 шаров ≈
+                            2
+                            часа
+                            игры. 1000 шаров ≈ 3 часа игры.</div>
+                        <a class="cost__btn">Забронировать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__menu">
+                    <nav>
+                        <a href="index.html" class="header__link">Главная</a>
+                        <a href="equipment.html" class="header__link">Экипировка</a>
+                        <a href="#" class="header__link active">Цены</a>
+                        <a href="photos.html" class="header__link">Фото</a>
+                    </nav>
+                    <div class="footer__logo">
+                        <img src="img/logo.svg" alt="" class="logo">
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p>Адрес: г.Минск, пр-т Независимости 76</p>
+                    <p>ИП Стрельцов Андрей Викторович</p>
+                    <p>УНП 22400786, №209321</p>
+                    <p>Альфа, 2023.Все права соблюдены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/price.js"></script>
+</body>
+
+</html>

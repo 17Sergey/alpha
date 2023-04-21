@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap"); /* Tablet query */
+@media (max-width: 835px) {
+  .logo {
+    transform: scale(0.8);
+    margin-left: -10px;
+  }
+  header .container {
+    padding: 0;
+  }
+  header .header__burger {
+    display: block;
+  }
+  header .header__menu {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    background-color: #151515;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header .header__menu a {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 835px) {
+  footer .footer__content {
+    flex-direction: column;
+  }
+  footer .footer__info {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373A3C;
+  }
+}
+/* Mobile query *//*# sourceMappingURL=common-media.css.map */
