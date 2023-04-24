@@ -15,6 +15,7 @@
             .additional-service__item {
                 text-align: center;
                 margin-bottom: 50px;
+
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -29,33 +30,38 @@
 
     .fields {
         .fields__slider {
-            max-width: 90%;
-
-            .slick-prev:before,
-            .slick-next:before {
-                height: 40px;
+            .slick-arrow {
                 width: 40px;
+                height: 40px;
+                margin-top: -35px;
             }
         }
     }
 
     .instructors {
         .instructors__slider {
-            max-width: 90%;
+            padding: 0 20px;
 
-            .slick-prev:before,
-            .slick-next:before {
+            .slick-arrow {
                 height: 40px;
                 width: 40px;
+                margin-top: -35px;
             }
 
-            .slick-prev:before {
-                left: -7%;
+            .slick-prev {
+                left: 0%;
             }
 
-            .slick-next:before {
-                right: -7%;
+            .slick-next {
+                right: 0%;
             }
+
+            .instructor {
+                img {
+                    padding: 0 45px;
+                }
+            }
+
             .instructor-hover__message {
                 display: none !important;
             }
@@ -64,90 +70,26 @@
 
 }
 
-@media (max-width: 610px) {
-    .fields {
-        .fields__slider {
-
-            .slick-prev:before,
-            .slick-next:before {
-                transform: translateY(-150%);
-            }
-
-            .slick-prev:before {
-                left: 30%;
-            }
-
-            .slick-next:before {
-                right: 30%;
-            }
-        }
-    }
-    .instructors {
-        .instructors__heading {
-            margin-top: 50px;
-        }
-        .instructor {
-            padding-top: 0;
-        }
-    }
-}
-
 @media (max-width: 510px) {
     .fields {
-        .fields__heading {
-            margin-bottom: 0;
-        }
 
         .fields__slider {
-            max-width: 100%;
+            padding: 0 15px;
 
-            .slick-prev:before,
-            .slick-next:before {
+            .slick-arrow {
                 top: 100%;
             }
 
-            .slick-prev:before {
+            .slick-prev {
                 left: 30%;
             }
 
-            .slick-next:before {
+            .slick-next {
                 right: 30%;
             }
 
             .field {
-                padding: 0;
                 padding-bottom: 20px;
-            }
-        }
-    }
-}
-
-/* Mobile query */
-
-@media (max-width: 410px) {
-    .instructors {
-        .instructors__slider {
-            max-width: 90%;
-
-            .slick-prev:before,
-            .slick-next:before {
-                height: 40px;
-                width: 40px;
-                transform: translateY(-160%);
-            }
-
-            .slick-prev:before {
-                left: -10%;
-            }
-
-            .slick-next:before {
-                right: -10%;
-            }
-
-            .instructor {
-                figcaption {
-                    text-align: center;
-                }
             }
         }
     }

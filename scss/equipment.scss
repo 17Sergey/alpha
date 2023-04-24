@@ -3,7 +3,7 @@
 
 .equipment {
     position: relative;
-    min-height: 170vh;
+    padding-bottom: 1000px;
 
     .equipment__heading {
         text-align: center;
@@ -30,6 +30,7 @@
 
     .equipment__item-caption {
         text-align: center;
+        max-width: 300px;
     }
 
     .equipment__item-marker {
@@ -61,6 +62,7 @@
             position: relative;
             left: -20px;
         }
+
         .equipment__hand-pointer {
             width: 40px;
             height: 40px;
@@ -73,6 +75,7 @@
     .equipment__item-mask {
         top: 280px;
         right: 30px;
+        text-align: center;
 
         img {
             width: 200px;
@@ -99,7 +102,6 @@
         figcaption {
             position: relative;
             top: 20px;
-            max-width: 300px;
         }
     }
 
@@ -111,10 +113,15 @@
 
     .equipment__img {
         position: absolute;
-        left: 300px;
+        display: inline;
+        right: 320px;
         top: 480px;
+
+        img {
+            max-width: 100%;
+        }
     }
-    
+
     .equipment__item-outline {
         transition: all .4s ease;
         opacity: 0;
@@ -137,39 +144,31 @@
         margin-top: 30px;
         @include plainText;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .additional-equipment__slider {
-        margin-top: 40px !important;
-        margin-right: 50px !important;
-        max-width: 1000px;
-        margin: 0 auto;
+        padding: 0 60px;
         @include arrows;
-
-        .slick-prev:before,
-        .slick-next:before {
-            top: 42%;
+        .slick-arrow {
+            margin-top: 0;
         }
 
-        .slick-prev:before {
-            left: -10%;
-        }
-
-        .slick-next:before {
-            right: -5%;
+        .slick-list {
+            margin: 0 auto;
         }
     }
 
     .additional-equipment__item {
-        max-width: 320px;
         min-height: 460px;
         border: 3px solid $yellow;
         padding: 10px;
-        margin-right: 50px;
+        margin: 0 20px;
+        text-align: center;
     }
 
     .additional-equipment__item-img {
-        height: 280px;
+        min-height: 280px;
     }
 
     .additional-equipment__item-name {

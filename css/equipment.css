@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
 .equipment {
   position: relative;
-  min-height: 170vh;
+  padding-bottom: 1000px;
 }
 .equipment .equipment__heading {
   text-align: center;
@@ -19,7 +19,7 @@
   color: #373A3C;
   font-weight: bold;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .equipment .equipment__text {
     font-size: 22px;
   }
@@ -36,6 +36,7 @@
 }
 .equipment .equipment__item-caption {
   text-align: center;
+  max-width: 300px;
 }
 .equipment .equipment__item-marker {
   top: 200px;
@@ -72,6 +73,7 @@
 .equipment .equipment__item-mask {
   top: 280px;
   right: 30px;
+  text-align: center;
 }
 .equipment .equipment__item-mask img {
   width: 200px;
@@ -94,7 +96,6 @@
 .equipment .equipment__item-granade figcaption {
   position: relative;
   top: 20px;
-  max-width: 300px;
 }
 .equipment .equipment__item-move {
   left: 750px;
@@ -103,8 +104,12 @@
 }
 .equipment .equipment__img {
   position: absolute;
-  left: 300px;
+  display: inline;
+  right: 320px;
   top: 480px;
+}
+.equipment .equipment__img img {
+  max-width: 100%;
 }
 .equipment .equipment__item-outline {
   transition: all 0.4s ease;
@@ -122,7 +127,7 @@
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .additional-equipment .additional-equipment__text {
     font-size: 22px;
   }
@@ -133,63 +138,47 @@
   font-weight: 400;
   color: #373A3C;
   text-align: center;
+  margin-bottom: 40px;
 }
 .additional-equipment .additional-equipment__slider {
-  margin-top: 40px !important;
-  margin-right: 50px !important;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 0 60px;
 }
-.additional-equipment .additional-equipment__slider .slick-prev,
-.additional-equipment .additional-equipment__slider .slick-next {
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 0 !important;
-  height: 0 !important;
-}
-.additional-equipment .additional-equipment__slider .slick-prev:before,
-.additional-equipment .additional-equipment__slider .slick-next:before {
-  content: "";
-  cursor: pointer;
-  background-size: cover;
-  display: table;
-  height: 50px;
-  width: 50px;
+.additional-equipment .additional-equipment__slider .slick-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
+  margin-top: -25px;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.additional-equipment .additional-equipment__slider .slick-prev:before {
+.additional-equipment .additional-equipment__slider .slick-prev {
   left: 0;
-  z-index: 100;
   background-image: url("../img/left-arrow.svg");
 }
-.additional-equipment .additional-equipment__slider .slick-next:before {
+.additional-equipment .additional-equipment__slider .slick-next {
   right: 0;
   background-image: url("../img/right-arrow.svg");
 }
-.additional-equipment .additional-equipment__slider .slick-prev:before,
-.additional-equipment .additional-equipment__slider .slick-next:before {
-  top: 42%;
+.additional-equipment .additional-equipment__slider .slick-arrow {
+  margin-top: 0;
 }
-.additional-equipment .additional-equipment__slider .slick-prev:before {
-  left: -10%;
-}
-.additional-equipment .additional-equipment__slider .slick-next:before {
-  right: -5%;
+.additional-equipment .additional-equipment__slider .slick-list {
+  margin: 0 auto;
 }
 .additional-equipment .additional-equipment__item {
-  max-width: 320px;
   min-height: 460px;
   border: 3px solid #FBAF39;
   padding: 10px;
-  margin-right: 50px;
+  margin: 0 20px;
+  text-align: center;
 }
 .additional-equipment .additional-equipment__item-img {
-  height: 280px;
+  min-height: 280px;
 }
 .additional-equipment .additional-equipment__item-name {
   margin-top: 30px;

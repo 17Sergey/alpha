@@ -1,15 +1,18 @@
-@media (max-width: 1100px) {
+@media (max-width: 1165px) {
+  .equipment {
+    padding-bottom: 1350px;
+  }
   .equipment .equipment__text {
     text-align: left;
   }
   .equipment .equipment__descr {
     text-align: left;
     max-width: 400px;
+    margin-bottom: 40px;
   }
   .equipment .equipment__img {
-    width: 350px;
-    left: 235px;
-    top: 320px;
+    right: 20px;
+    top: 300px;
   }
   .equipment .equipment__svg {
     display: none;
@@ -19,18 +22,22 @@
     left: 0px;
   }
   .equipment .equipment__item-armor {
-    top: 885px;
+    top: 900px;
   }
   .equipment .equipment__item-armor .equipment__hand-pointer {
     display: none;
   }
   .equipment .equipment__item-gloves {
-    top: 930px;
+    top: 950px;
     right: 50px;
   }
   .equipment .equipment__item-mask {
     top: 1310px;
-    right: 540px;
+    left: 20px;
+    max-width: 280px;
+  }
+  .equipment .equipment__item-mask img {
+    max-width: 100%;
   }
   .equipment .equipment__item-mask figcaption {
     position: relative;
@@ -42,5 +49,62 @@
   .equipment .equipment__item-granade img {
     width: 200px;
     height: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .equipment .equipment__img {
+    max-width: 70%;
+    top: 320px;
+    right: 0;
+  }
+  .additional-equipment .additional-equipment__slider {
+    padding: 0 40px;
+  }
+  .additional-equipment .additional-equipment__slider .slick-prev {
+    left: -15px;
+  }
+  .additional-equipment .additional-equipment__slider .slick-next {
+    right: -15px;
+  }
+  .additional-equipment .additional-equipment__slider .slick-list {
+    display: flex;
+    justify-content: center;
+  }
+  .additional-equipment .additional-equipment__item {
+    overflow: hidden;
+    min-height: auto;
+  }
+  .additional-equipment .additional-equipment__item-img {
+    min-height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .equipment {
+    padding-bottom: 50px;
+  }
+  .equipment .equipment__items {
+    position: static;
+  }
+  .equipment .equipment__item {
+    position: static;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .equipment .equipment__item figcaption {
+    max-width: 100%;
+  }
+  .equipment .equipment__img {
+    max-width: 100%;
+    position: static;
+    margin-top: 50px;
+  }
+  .equipment .equipment__item-marker {
+    margin-bottom: 0;
+  }
+  .equipment .equipment__item-armor figcaption {
+    left: 0;
+  }
+  .equipment .equipment__item-mask {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=equipment-media.css.map */

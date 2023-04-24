@@ -4,23 +4,21 @@
 .fields {
 
     .fields__slider {
-        margin: 0 auto;
+        position: relative;
+        padding: 0 60px;
         @include arrows;
     }
 
     .field {
         text-align: center;
-        padding: 0 30px;
 
         img {
-            max-width: 90%;
-            display: inline-block;
+            max-width: 100%;
         }
 
         figcaption {
             margin-top: 10px;
-            text-align: center;
-            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -55,18 +53,17 @@
 .instructors {
     .instructors__heading {
         margin-top: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
 
     .instructors__slider {
-        margin: 0 auto;
         @include arrows;
 
-        .slick-prev:before {
+        .slick-prev {
             left: 10%;
         }
 
-        .slick-next:before {
+        .slick-next {
             right: 10%;
         }
     }
@@ -76,18 +73,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
 
         img {
             display: inline-block;
-            padding: 20px;
+            padding: 0 20px;
         }
 
         figcaption {
             margin-top: 15px;
+            text-align: center;
         }
-
-        margin-bottom: 40px;
         z-index: 1;
     }
 
@@ -112,5 +107,5 @@
 }
 
 .order {
-    margin-top: 50px;
+    margin-top: 90px;
 }

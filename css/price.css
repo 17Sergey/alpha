@@ -30,7 +30,7 @@ body {
   color: #373A3C;
   max-width: 490px;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .rates .rate__descr {
     font-size: 22px;
   }
@@ -47,8 +47,8 @@ body {
   justify-content: space-between;
 }
 .rates .rate__descr-list {
-  position: relative;
-  left: 25px;
+  margin-left: 25px;
+  max-width: 100%;
 }
 .rates .rate__descr-item {
   font-weight: bold;
@@ -193,7 +193,7 @@ body {
   border: 1px solid #EE3A64;
   cursor: pointer;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .cost .cost__btn {
     font-size: 22px;
   }

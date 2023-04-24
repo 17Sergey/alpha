@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .main__images {
+    align-self: flex-end;
+  }
+  .main .main__present {
+    display: none;
+  }
+  .main .main__img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .main .orange-spot {
+    display: none !important;
+  }
+  .main .blue-spot {
+    max-width: 200px;
+    top: 580px;
+    right: 420px;
+  }
+  .main .pink-spot {
+    top: 775px;
+    right: 520px;
+  }
+  .main .red-spot {
+    top: 230px;
+    right: 10px;
+  }
+  .main .skyblue-spot {
+    top: 340px;
+    right: 450px;
+    z-index: -1;
+  }
+  .description .description__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .description .description__items {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  .description .description__item div > .description__item-img {
+    width: 30px;
+    margin-right: 45px;
+    margin-top: 0px;
+  }
+  .discounts .discounts__items {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  .discounts .discount {
+    margin-right: 0;
+    margin-top: 60px;
+  }
+  .process .process__points {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .process .point {
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .process .point__img {
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .process .point__line {
+    z-index: -1;
+    left: 25px;
+    bottom: 0;
+    width: 3px;
+    height: 130%;
+  }
+  .process .point__line-last {
+    height: 85%;
+  }
+  .process .point__text {
+    max-width: 280px;
+  }
+  .process .point__congrats-img {
+    display: none !important;
+  }
+}
+@media (max-width: 700px) {
+  .scenarios .scenarios__slider {
+    padding: 0 40px;
+  }
+  .scenarios .scenarios__slider .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .scenarios .scenarios__slider .slick-prev {
+    left: -15px;
+  }
+  .scenarios .scenarios__slider .slick-next {
+    right: -15px;
+  }
+  .scenarios .scenarios__slider .slick-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .main .main__spot {
+    display: none !important;
+  }
+}
+@media (max-width: 450px) {
+  .process .point__img {
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=index-media.css.map */

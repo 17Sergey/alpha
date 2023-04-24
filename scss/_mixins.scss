@@ -7,7 +7,7 @@
 }
 
 @mixin heading {
-    @media (max-width: 410px) {
+    @media (max-width: 450px) {
         font-size: 32px;
     }
 
@@ -18,7 +18,7 @@
 }
 
 @mixin subheading {
-    @media (max-width: 410px) {
+    @media (max-width: 420px) {
         font-size: 22px;
     }
 
@@ -84,44 +84,33 @@
 
 @mixin arrows {
 
-    .slick-prev,
-    .slick-next {
-        cursor: pointer;
-        color: transparent;
-        border: none;
-        outline: none;
-        background: transparent;
-        width: 0 !important;
-        height: 0 !important;
-    }
-
-
-    .slick-prev:before,
-    .slick-next:before {
-        content: "";
-        cursor: pointer;
-        background-size: cover;
-        display: table;
-        height: 50px;
-        width: 50px;
+    .slick-arrow {
         position: absolute;
         top: 50%;
-        transform: translateY(-100%);
+        transform: translateY(-50%);
+        margin-top: -25px;
+        z-index: 10;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
-    .slick-prev:before {
+    .slick-prev {
         left: 0;
-        z-index: 100;
         background-image: url("../img/left-arrow.svg");
     }
 
-    .slick-next:before {
+    .slick-next {
         right: 0;
         background-image: url("../img/right-arrow.svg");
     }
 }
 
 @mixin order {
+    padding: 10px;
     max-width: 1000px;
     min-height: 350px;
     background-color: $pink;
@@ -171,7 +160,7 @@
         }
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 700px) {
         .form__fields {
             flex-direction: column;
             align-items: center;
@@ -181,6 +170,18 @@
                 margin: 10px 0;
                 width: 90%;
             }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .order__heading {
+            padding-top: 0;
+            margin-top: 10px;
+        }
+
+        .order__text {
+            @include plainText;
+            color: $white;
         }
     }
 }

@@ -37,8 +37,8 @@ body {
         justify-content: space-between;
     }
     .rate__descr-list {
-        position: relative;
-        left: 25px;
+        margin-left: 25px;
+        max-width: 100%;
     }
     .rate__descr-item {
         font-weight: bold;

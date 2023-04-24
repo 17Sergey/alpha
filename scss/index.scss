@@ -30,6 +30,7 @@
 
     .main__present {
         margin-top: 40px;
+
         .main__present-img {
             width: 55px;
             height: 55px;
@@ -41,6 +42,7 @@
 
     .main__img {
         margin-top: 40px;
+        margin-right: 120px;
         max-width: 400px;
     }
 
@@ -51,29 +53,31 @@
     }
 
     .orange-spot {
+        max-width: 130px;
         top: 270px;
-        left: 590px;
+        right: 500px;
     }
 
     .blue-spot {
+        max-width: 120px;
         top: 15px;
-        left: 1150px;
+        right: 0;
     }
 
     .pink-spot {
         top: 500px;
-        left: 860px;
+        right: 250px;
     }
 
     .red-spot {
-        width: 200px;
+        width: 180px;
         top: 230px;
-        left: 1035px;
+        right: 20px;
     }
 
     .skyblue-spot {
         top: -20px;
-        left: 780px;
+        right: 300px;
     }
 }
 
@@ -151,7 +155,6 @@
 }
 
 .scenarios {
-    min-height: 100vh;
     margin-top: 130px;
     position: relative;
 
@@ -162,50 +165,38 @@
     .scenarios__text {
         text-align: center;
         margin-top: 40px;
+        margin-bottom: 40px;
     }
 
     .scenarios__slider {
-        margin-top: 40px !important;
-        max-width: 1170px;
-        margin: 0 auto;
+        padding: 0 60px;
         @include arrows;
 
-        .slick-prev:before,
-        .slick-next:before {
-            top: 42%;
-        }
-
-        .slick-prev:before {
-            left: -7%;
-        }
-
-        .slick-next:before {
-            right: -7%;
+        .slick-arrow {
+            margin-top: 0;
         }
     }
 
     .scenario {
         margin: 0 10px;
-        margin-bottom: 20px;
-        max-width: 360px;
-        height: 370px;
         position: relative;
         cursor: pointer;
     }
 
     .scenario__img {
         width: 100%;
-        height: 370px;
+        height: 100%;
+        z-index: -1;
     }
 
     .scenario__bg {
-        width: 100%;
-        height: 100%;
         background-color: black;
         opacity: 0.6;
         position: absolute;
         top: 0;
+        bottom: 0;
         left: 0;
+        right: 0;
         z-index: 1;
     }
 
@@ -215,18 +206,18 @@
         color: $white;
         text-align: center;
         position: absolute;
-        top: 200px;
         left: 0;
         right: 0;
+        bottom: 0px;
         z-index: 5;
-        max-width: 100%;
-        padding: 5px;
+        padding: 10px;
     }
 
     /* Description modals */
 
     .description__modal {
         position: fixed;
+        z-index: 100;
         inset: 0;
         background-color: rgba(0, 0, 0, .5);
         display: flex;
@@ -258,7 +249,7 @@
             p {
                 text-align: center;
             }
-    
+
             img {
                 position: absolute;
                 top: 20px;
@@ -271,7 +262,7 @@
     }
 
     .scenarios__descr {
-        margin-top: 10px;
+        margin-top: 30px;
         @include plainText;
         text-align: center;
     }
@@ -339,20 +330,23 @@
     .point {
         padding: 20px;
     }
+
     .point__img {
         position: relative;
     }
 
-
     .point__line {
-        width: 110%;
-        margin-right: -50px;
+        width: 100%;
         height: 3px;
         background-color: $smoke;
         position: absolute;
         top: 30px;
         left: 60px;
         transition: all .3s ease-in;
+    }
+
+    .point__line-last {
+        max-width: 80%;
     }
 
     .point__congrats-img {
@@ -370,10 +364,6 @@
 
     .point__line-active {
         background-color: $yellow;
-    }
-
-    .point__line-last {
-        width: 200px;
     }
 
     .point__content {}

@@ -3,51 +3,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
 .fields .fields__slider {
-  margin: 0 auto;
+  position: relative;
+  padding: 0 60px;
 }
-.fields .fields__slider .slick-prev,
-.fields .fields__slider .slick-next {
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 0 !important;
-  height: 0 !important;
-}
-.fields .fields__slider .slick-prev:before,
-.fields .fields__slider .slick-next:before {
-  content: "";
-  cursor: pointer;
-  background-size: cover;
-  display: table;
-  height: 50px;
-  width: 50px;
+.fields .fields__slider .slick-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
+  margin-top: -25px;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.fields .fields__slider .slick-prev:before {
+.fields .fields__slider .slick-prev {
   left: 0;
-  z-index: 100;
   background-image: url("../img/left-arrow.svg");
 }
-.fields .fields__slider .slick-next:before {
+.fields .fields__slider .slick-next {
   right: 0;
   background-image: url("../img/right-arrow.svg");
 }
 .fields .field {
   text-align: center;
-  padding: 0 30px;
 }
 .fields .field img {
-  max-width: 90%;
-  display: inline-block;
+  max-width: 100%;
 }
 .fields .field figcaption {
   margin-top: 10px;
-  text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .additional-service .additional-service__heading {
@@ -68,7 +56,7 @@
   font-weight: bold;
   margin-top: 20px;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .additional-service .additional-service__item-name {
     font-size: 22px;
   }
@@ -82,46 +70,33 @@
 
 .instructors .instructors__heading {
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
-.instructors .instructors__slider {
-  margin: 0 auto;
-}
-.instructors .instructors__slider .slick-prev,
-.instructors .instructors__slider .slick-next {
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 0 !important;
-  height: 0 !important;
-}
-.instructors .instructors__slider .slick-prev:before,
-.instructors .instructors__slider .slick-next:before {
-  content: "";
-  cursor: pointer;
-  background-size: cover;
-  display: table;
-  height: 50px;
-  width: 50px;
+.instructors .instructors__slider .slick-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-100%);
+  transform: translateY(-50%);
+  margin-top: -25px;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.instructors .instructors__slider .slick-prev:before {
+.instructors .instructors__slider .slick-prev {
   left: 0;
-  z-index: 100;
   background-image: url("../img/left-arrow.svg");
 }
-.instructors .instructors__slider .slick-next:before {
+.instructors .instructors__slider .slick-next {
   right: 0;
   background-image: url("../img/right-arrow.svg");
 }
-.instructors .instructors__slider .slick-prev:before {
+.instructors .instructors__slider .slick-prev {
   left: 10%;
 }
-.instructors .instructors__slider .slick-next:before {
+.instructors .instructors__slider .slick-next {
   right: 10%;
 }
 .instructors .instructor {
@@ -129,16 +104,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  margin-bottom: 40px;
   z-index: 1;
 }
 .instructors .instructor img {
   display: inline-block;
-  padding: 20px;
+  padding: 0 20px;
 }
 .instructors .instructor figcaption {
   margin-top: 15px;
+  text-align: center;
 }
 .instructors .instructor-hover__message {
   max-width: 400px;
@@ -159,5 +133,5 @@
 }
 
 .order {
-  margin-top: 50px;
+  margin-top: 90px;
 }/*# sourceMappingURL=photos.css.map */

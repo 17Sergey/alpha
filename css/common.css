@@ -42,7 +42,7 @@ img {
   color: #FBAF39;
   text-align: center;
 }
-@media (max-width: 410px) {
+@media (max-width: 450px) {
   .heading {
     font-size: 32px;
   }
@@ -66,7 +66,7 @@ img {
   padding: 2px 20px 5px;
   transition: all 0.3s ease-out;
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .btn {
     font-size: 22px;
   }
@@ -99,6 +99,7 @@ header .header__burger {
 }
 
 .order {
+  padding: 10px;
   max-width: 1000px;
   min-height: 350px;
   background-color: #EE3A64;
@@ -142,7 +143,7 @@ header .header__burger {
   text-align: left;
   color: #FFFFFF;
 }
-@media (max-width: 670px) {
+@media (max-width: 700px) {
   .order .form__fields {
     flex-direction: column;
     align-items: center;
@@ -151,6 +152,18 @@ header .header__burger {
 .order .form__fields .order__btn {
     margin: 10px 0;
     width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .order .order__heading {
+    padding-top: 0;
+    margin-top: 10px;
+  }
+  .order .order__text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #373A3C;
+    color: #FFFFFF;
   }
 }
 

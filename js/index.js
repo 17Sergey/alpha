@@ -20,11 +20,27 @@ $(document).ready(function () {
         $(".pink-spot").fadeIn(600);
     }, 1200)
 
+
+    // Scenarios slider
     $('.scenarios__slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
+        responsive: [
+            {
+              breakpoint: 960,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                  slidesToShow: 1,
+                }
+              },
+        ],
     });
 
     // Scenarios description
