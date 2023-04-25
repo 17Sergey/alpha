@@ -19,7 +19,7 @@
     }
 
     header .header__menu {
-        position: absolute;
+        position: fixed;
         z-index: 5;
         top: 0;
         background-color: $blackbg;

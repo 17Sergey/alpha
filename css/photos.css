@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Oswald:wght@400;700&family=Rubik+Gemstones&family=Russo+One&display=swap");
+main {
+  margin-top: 120px;
+}
+
 .fields .fields__slider {
   position: relative;
   padding: 0 60px;

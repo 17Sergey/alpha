@@ -77,6 +77,11 @@ header {
   color: #FFFFFF;
   padding: 10px 0;
   overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 header .header__content {
   display: flex;

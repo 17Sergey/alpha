@@ -1,6 +1,10 @@
 @import "./variables";
 @import "./mixins";
 
+main {
+    margin-top: 80px;
+}
+
 .main {
     display: flex;
     justify-content: space-between;

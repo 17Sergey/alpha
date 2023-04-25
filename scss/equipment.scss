@@ -1,6 +1,11 @@
 @import "./variables";
 @import "./mixins";
 
+
+main {
+    margin-top: 170px;
+}
+
 .equipment {
     position: relative;
     padding-bottom: 1000px;
