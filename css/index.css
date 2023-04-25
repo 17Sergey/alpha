@@ -118,9 +118,8 @@ main {
   transform: rotate(90deg);
 }
 .description .description__item-img {
-  width: 35px;
+  width: 45px;
   margin-right: 25px;
-  margin-top: 5px;
   transition: all 0.3s ease-out;
 }
 .description .description__item-heading {

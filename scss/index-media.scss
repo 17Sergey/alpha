@@ -55,12 +55,6 @@
             margin-top: 60px;
             margin-left: 0;
         }
-
-        .description__item div>.description__item-img {
-            width: 30px;
-            margin-right: 45px;
-            margin-top: 0px;
-        }
     }
 
     .discounts {
@@ -145,6 +139,11 @@
     .main {
         .main__spot {
             display: none !important;
+        }
+    }
+    .description {
+        .description__item div>.description__item-img {
+            margin-right: 45px;
         }
     }
 }

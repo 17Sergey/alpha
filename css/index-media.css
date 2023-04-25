@@ -45,11 +45,6 @@
     margin-top: 60px;
     margin-left: 0;
   }
-  .description .description__item div > .description__item-img {
-    width: 30px;
-    margin-right: 45px;
-    margin-top: 0px;
-  }
   .discounts .discounts__items {
     flex-direction: column;
     align-items: center;
@@ -111,6 +106,9 @@
 @media (max-width: 600px) {
   .main .main__spot {
     display: none !important;
+  }
+  .description .description__item div > .description__item-img {
+    margin-right: 45px;
   }
 }
 @media (max-width: 450px) {
