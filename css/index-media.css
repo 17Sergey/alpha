@@ -78,7 +78,7 @@
   }
   .process .point__line {
     z-index: -1;
-    left: 25px;
+    left: 30px;
     bottom: 0;
     width: 3px;
     height: 130%;
@@ -116,8 +116,5 @@
 @media (max-width: 450px) {
   .process .point__img {
     margin-right: 20px;
-  }
-  .process .point__line {
-    left: 30px;
   }
 }/*# sourceMappingURL=index-media.css.map */
