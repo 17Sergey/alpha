@@ -33,6 +33,9 @@
     font-weight: 400;
     color: #373A3C;
   }
+  .cost .calculator__field-item:hover {
+    background-color: #151515;
+  }
 }
 @media (max-width: 690px) {
   .rates .rate {

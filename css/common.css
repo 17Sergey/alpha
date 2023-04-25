@@ -137,6 +137,7 @@ header .header__burger {
   background-color: #f5f5f5;
   border: none;
   margin: 10px;
+  border-radius: 3px;
 }
 .order .form__fields .order__btn {
   background-color: #FBAF39;

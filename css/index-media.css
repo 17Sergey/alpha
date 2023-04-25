@@ -97,10 +97,6 @@
   .scenarios .scenarios__slider {
     padding: 0 40px;
   }
-  .scenarios .scenarios__slider .slick-arrow {
-    width: 40px;
-    height: 40px;
-  }
   .scenarios .scenarios__slider .slick-prev {
     left: -15px;
   }

@@ -61,4 +61,7 @@
   .fields .fields__slider .field {
     padding-bottom: 20px;
   }
+  .fields .fields__slider .field figcaption {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=photos-media.css.map */

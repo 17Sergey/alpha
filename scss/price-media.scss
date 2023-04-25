@@ -40,6 +40,12 @@
             }
         }
     }
+
+    .cost {
+        .calculator__field-item:hover {
+            background-color: $blackbg;
+        }
+    }
 }
 
 @media (max-width: 690px) {
