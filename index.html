@@ -436,7 +436,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="footer__content">
+            <!-- <div class="footer__content">
                 <div class="footer__menu">
                     <nav>
                         <a href="#" class="header__link active">Главная</a>
@@ -456,14 +456,50 @@
                     <p>УНП 22400786, №209321</p>
                     <p>Альфа, 2023.Все права соблюдены.</p>
                 </div>
+            </div> -->
+            <div id="tasksTable">
+                <table class="table" id="tasks">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Задача</th>
+                            <th scope="col">Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Task Table Row -->
+                    </tbody>
+                </table>
+            </div>
+        
+        
+            <div class="container">
+        
+                <div class="heading" style="text-align: center;">
+                    <h1 id="headerTitle">Список задач</h1>
+                </div>
+        
+                <div id="app"></div>
+        
             </div>
         </div>
     </footer>
 
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Slick slider -->
     <script src="js/slick.min.js"></script>
+
+    <!-- Burger menu -->
     <script src="js/menu.js"></script>
+
+    <!-- Getting footer info from XML -->
+    <script src="js/footerInfo.js"></script>
+
+    <!-- Custom JS -->
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
