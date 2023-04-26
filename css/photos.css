@@ -113,6 +113,7 @@ main {
 .instructors .instructor img {
   display: inline-block;
   padding: 0 20px;
+  border-radius: 50%;
 }
 .instructors .instructor figcaption {
   margin-top: 15px;
