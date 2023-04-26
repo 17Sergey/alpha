@@ -5,24 +5,3 @@
     <info id="info">УНП 22400786, №209321</info>
     <copyright id="copyright">Альфа, 2023.Все права соблюдены.</copyright>
 </contacts>
-<!-- <?xml version="1.0" encoding="utf-8" ?>
-<tasks>
-    <task id="1">
-        <name>Научиться работать с XML в JavaScript</name>
-        <description>
-            Надо посмотреть как открыть, записать и сохранить значение в XML файл на JS
-        </description>
-    </task>
-    <task id="2">
-        <name>Научиться работать с XML в JavaScript</name>
-        <description>
-            Надо посмотреть как открыть, записать и сохранить значение в XML файл на JS
-        </description>
-    </task>
-    <task id="3">
-        <name>Научиться работать с XML в JavaScript</name>
-        <description>
-            Надо посмотреть как открыть, записать и сохранить значение в XML файл на JS
-        </description>
-    </task>
-</tasks> -->
