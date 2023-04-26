@@ -332,6 +332,9 @@ main {
 
     .point {
         padding: 20px;
+        &:last-child {
+            padding-right: 40px;
+        }
     }
 
     .point__img {
@@ -339,7 +342,7 @@ main {
     }
 
     .point__line {
-        width: 100%;
+        width: 110%;
         height: 3px;
         background-color: $smoke;
         position: absolute;
@@ -349,7 +352,8 @@ main {
     }
 
     .point__line-last {
-        max-width: 80%;
+        width: 80%;
+        // max-width: 80%;
     }
 
     .point__congrats-img {

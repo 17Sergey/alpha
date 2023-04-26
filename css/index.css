@@ -324,11 +324,14 @@ main {
 .process .point {
   padding: 20px;
 }
+.process .point:last-child {
+  padding-right: 40px;
+}
 .process .point__img {
   position: relative;
 }
 .process .point__line {
-  width: 100%;
+  width: 110%;
   height: 3px;
   background-color: #f5f5f5;
   position: absolute;
@@ -337,7 +340,7 @@ main {
   transition: all 0.3s ease-in;
 }
 .process .point__line-last {
-  max-width: 80%;
+  width: 80%;
 }
 .process .point__congrats-img {
   width: 70px;

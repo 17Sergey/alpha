@@ -29,17 +29,17 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-              breakpoint: 960,
-              settings: {
-                slidesToShow: 2,
-              }
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
             {
                 breakpoint: 700,
                 settings: {
-                  slidesToShow: 1,
+                    slidesToShow: 1,
                 }
-              },
+            },
         ],
     });
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
             if (key === "length") break;
             isNumberKey = Number(key) === 0 || Number(key);
             if (isNumberKey) {
-                $("#" + points[key].id).children(".point__img").children(".point__line").css("background-color", COLOR);
+                $("#" + points[key].id).find(".point__line").css("background-color", COLOR);
                 if (points[key].id === id) {
                     return;
                 }
@@ -87,13 +87,15 @@ $(document).ready(function () {
     }
     // On hover
     $(".point").mouseenter(
-        function () {
+        function (e) {
             fillCurrentAndPreviousLines(this.id, YELLOW);
-            if ($(this), $(".point").last()) {
+
+
+            if (e.target === $(".point").last()[0]) { // $(".point").last()[0] = <div class="point"></div>
 
                 // Cylinder animation
-                $(this).children(".point__img").children(".congrats-cylinder").fadeIn(300);
-                $(this).children(".point__img").children(".congrats-cylinder").animate(
+                $(this).find(".congrats-cylinder").fadeIn(300);
+                $(this).find(".congrats-cylinder").animate(
                     {
                         right: "-20",
                     },
@@ -101,8 +103,8 @@ $(document).ready(function () {
                 );
                 // Star animation
                 setTimeout(() => {
-                    $(this).children(".point__img").children(".congrats-star").fadeIn(300);
-                    $(this).children(".point__img").children(".congrats-star").animate(
+                    $(this).find(".congrats-star").fadeIn(300);
+                    $(this).find(".congrats-star").animate(
                         {
                             top: "55"
                         },
@@ -111,8 +113,8 @@ $(document).ready(function () {
                 }, 700)
                 // Square animation
                 setTimeout(() => {
-                    $(this).children(".point__img").children(".congrats-square").fadeIn(300);
-                    $(this).children(".point__img").children(".congrats-square").animate(
+                    $(this).find(".congrats-square").fadeIn(300);
+                    $(this).find(".congrats-square").animate(
                         {
                             right: "-20",
                             top: "55"
@@ -122,8 +124,8 @@ $(document).ready(function () {
                 }, 700)
                 // Circle animation
                 setTimeout(() => {
-                    $(this).children(".point__img").children(".congrats-circle").fadeIn(300);
-                    $(this).children(".point__img").children(".congrats-circle").animate(
+                    $(this).find(".congrats-circle").fadeIn(300);
+                    $(this).find(".congrats-circle").animate(
                         {
                             right: "-40",
                             top: "60"
@@ -131,36 +133,35 @@ $(document).ready(function () {
                         300
                     );
                 }, 700)
-
             }
         }
     )
 
     // End of hover
     $(".point").mouseleave(
-        function () {
+        function (e) {
             fillCurrentAndPreviousLines(this.id, SMOKE);
-            if ($(this), $(".point").last()) {
 
+            if (e.target === $(".point").last()[0]) { // $(".point").last()[0] = <div class="point"></div>
                 // Cylinder animation
-                $(this).children(".point__img").children(".congrats-cylinder").fadeOut(300);
-                $(this).children(".point__img").children(".congrats-cylinder").animate(
+                $(this).find(".congrats-cylinder").fadeOut(300);
+                $(this).find(".congrats-cylinder").animate(
                     {
                         right: "0",
                     },
                     500
                 );
                 // Star animation
-                $(this).children(".point__img").children(".congrats-star").fadeOut(300);
-                $(this).children(".point__img").children(".congrats-star").animate(
+                $(this).find(".congrats-star").fadeOut(300);
+                $(this).find(".congrats-star").animate(
                     {
                         top: "65",
                     },
                     500
                 );
                 // Square animation
-                $(this).children(".point__img").children(".congrats-square").fadeOut(300);
-                $(this).children(".point__img").children(".congrats-square").animate(
+                $(this).find(".congrats-square").fadeOut(300);
+                $(this).find(".congrats-square").animate(
                     {
                         right: "-30",
                         top: "65"
@@ -168,8 +169,8 @@ $(document).ready(function () {
                     500
                 );
                 // Circle animation
-                $(this).children(".point__img").children(".congrats-circle").fadeOut(300);
-                $(this).children(".point__img").children(".congrats-circle").animate(
+                $(this).find(".congrats-circle").fadeOut(300);
+                $(this).find(".congrats-circle").animate(
                     {
                         right: "-30",
                         top: "65"
