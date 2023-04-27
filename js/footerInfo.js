@@ -1,8 +1,12 @@
 $(function () {
     let
-        container = $('.footer__info'), // ссылка на контейнер
-        content = "" // html внутри контейнера
-        tasksFile = "https://raw.githubusercontent.com/17Sergey/alpha/main/xml/contacts.xml"; // файл с задачами
+        // ссылка на контейнер
+        container = $('.footer__info'),
+        // html внутри контейнера
+        content = "",
+        // файл с информацией
+        tasksFile = "https://raw.githubusercontent.com/17Sergey/alpha/main/xml/contacts.xml";
+
 
     // GET запрос на получение данных из xml файла
     const RequestObject = {
@@ -19,7 +23,7 @@ $(function () {
                 content += `<p>${item.textContent}</p>`;
             })
 
-            // добавляем в текст страницы содержимое базового шаблона
+            // добавляем в контейнер содержимое шаблона
             container.html(content);
         },
 
@@ -29,5 +33,14 @@ $(function () {
 
     // здесь непосредственно выполняем запрос
     $.ajax(RequestObject);
-
 });
+
+    // const xhttp = new XMLHttpRequest();
+
+    // xhttp.onload = function () {
+    //     const xmlDoc = xhttp.responseXML;
+    //     console.log(xmlDoc);
+    //     const root = xmlDoc;
+    // }
+    // xhttp.open("GET", "./xml/contacts.xml");
+    // xhttp.send();
