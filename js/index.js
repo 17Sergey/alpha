@@ -53,7 +53,7 @@ $(document).ready(function () {
     }
 
     $(".scenario").click(function (event) {
-        let selector = ".description__modal" + "#" + this.id;
+        let selector = ".description__modal" + "[data-id='" + this.dataset.id + "']";
         $(selector).fadeIn();
         $(selector).css("display", "flex");
 
@@ -65,7 +65,8 @@ $(document).ready(function () {
     })
     $(".description__modal").click(function (event) {
         if (event.target.className === "description__modal") {
-            $(".description__modal").fadeOut();
+            // $(".description__modal").fadeOut();
+            $(this).fadeOut();
             enableScroll();
         }
 
