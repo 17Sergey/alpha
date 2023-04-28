@@ -35,12 +35,6 @@ $(function () {
     $.ajax(RequestObject);
 });
 
-    // const xhttp = new XMLHttpRequest();
 
-    // xhttp.onload = function () {
-    //     const xmlDoc = xhttp.responseXML;
-    //     console.log(xmlDoc);
-    //     const root = xmlDoc;
-    // }
-    // xhttp.open("GET", "./xml/contacts.xml");
-    // xhttp.send();
+
+
