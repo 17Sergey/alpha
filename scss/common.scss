@@ -34,12 +34,23 @@ img {
     @include container;
 }
 
+.up-arrow {
+    @include up-arrow;
+}
+
+a#begin-anchor {
+    @include begin-anchor;
+}
+
 .heading {
     @include heading;
 }
 
 .logo {
     @include logo;
+}
+.logo-bullet {
+    @include logo-bullet;
 }
 
 .active {

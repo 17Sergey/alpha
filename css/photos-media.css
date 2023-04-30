@@ -16,6 +16,9 @@
   .additional-service .additional-service__items .additional-service__item:last-child {
     margin-bottom: 0;
   }
+  .additional-service .additional-service__items .additional-service__item-blackbg {
+    display: none;
+  }
 }
 /* Tablet query */
 @media (max-width: 836px) {

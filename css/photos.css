@@ -53,6 +53,22 @@ main {
 .additional-service .additional-service__item {
   max-width: 350px;
 }
+.additional-service .additional-service__item-img {
+  position: relative;
+}
+.additional-service .additional-service__item-img:hover .additional-service__item-blackbg {
+  opacity: 0.5;
+}
+.additional-service .additional-service__item-blackbg {
+  position: absolute;
+  top: 0;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
 .additional-service .additional-service__item-name {
   font-size: 24px;
   font-weight: 400;

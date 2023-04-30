@@ -4,6 +4,7 @@
 main {
     margin-top: 120px;
 }
+
 .fields {
 
     .fields__slider {
@@ -39,6 +40,23 @@ main {
 
     .additional-service__item {
         max-width: 350px;
+    }
+    .additional-service__item-img {
+        position: relative;
+
+        &:hover .additional-service__item-blackbg{
+            opacity: 0.5;
+        }
+    }
+    .additional-service__item-blackbg {
+        position: absolute;
+        top: 0;
+        bottom: 7px;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0;
+        transition: all 0.3s ease;
     }
 
     .additional-service__item-name {
@@ -87,6 +105,7 @@ main {
             margin-top: 15px;
             text-align: center;
         }
+
         z-index: 1;
     }
 

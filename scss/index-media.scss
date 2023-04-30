@@ -82,6 +82,10 @@
             padding-left: 0;
             display: flex;
             justify-content: space-between;
+
+            &:last-child {
+                padding-right: 0;
+            }
         }
 
         .point__img {
@@ -115,6 +119,13 @@
 }
 
 @media (max-width: 700px) {
+    .main {
+        .main__spot {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
     .scenarios {
         .scenarios__slider {
             padding: 0 40px;

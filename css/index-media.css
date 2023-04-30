@@ -65,6 +65,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .process .point:last-child {
+    padding-right: 0;
+  }
   .process .point__img {
     margin-top: 20px;
     margin-right: 40px;
@@ -89,6 +92,9 @@
   }
 }
 @media (max-width: 700px) {
+  .main .main__spot:hover {
+    transform: scale(1);
+  }
   .scenarios .scenarios__slider {
     padding: 0 40px;
   }
