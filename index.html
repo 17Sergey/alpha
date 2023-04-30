@@ -56,7 +56,7 @@
                     <p class="main__text">Самая реалистичная из командно-тактических игр. Стрельба ведется шариками с
                         краской из специальных маркеров, попадания хорошо заметны и ощутимы — невозможно не заметить!
                         Теперь и для детей от 12 лет.</p>
-                    <a href="#" class="main__btn btn">Заказать игру</a>
+                    <a href="#order" class="main__btn btn">Заказать игру</a>
                     <div class="main__present">
                         <span class="main__present-text">Закажите игру на 10+ человек и получите </span>
                         <img src="img/index/present.svg" alt="подарок" class="main__present-img">
@@ -354,10 +354,14 @@
                         <div class="point__img">
                             <img src="img/index/4.svg" alt="point__circle" class="point__circle">
                             <div class="point__line point__line-last"></div>
-                            <img src="img/index/cylinder.svg" alt="congrats-cylinder" class="point__congrats-img congrats-cylinder">
-                            <img src="img/index/star-confetti.svg" alt="congrats-star" class="point__congrats-img congrats-star">
-                            <img src="img/index/square-confetti.svg" alt="congrats-square" class="point__congrats-img congrats-square">
-                            <img src="img/index/circle-confetti.svg" alt="congrats-circle" class="point__congrats-img congrats-circle">
+                            <img src="img/index/cylinder.svg" alt="congrats-cylinder"
+                                class="point__congrats-img congrats-cylinder">
+                            <img src="img/index/star-confetti.svg" alt="congrats-star"
+                                class="point__congrats-img congrats-star">
+                            <img src="img/index/square-confetti.svg" alt="congrats-square"
+                                class="point__congrats-img congrats-square">
+                            <img src="img/index/circle-confetti.svg" alt="congrats-circle"
+                                class="point__congrats-img congrats-circle">
 
                         </div>
                         <div class="point__content">
@@ -368,13 +372,21 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Anchor to the Order section below -->
+            <a id="order"></a>
+
             <div class="order">
                 <h2 class="order__heading heading">Закажите игру сейчас</h2>
                 <div class="order__text">Мы перезвоним вам, чтобы уточнить все детали и оформить заявку.</div>
                 <form class="order__form">
                     <div class="form__fields">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Телефон">
+                        <input id="order-name" type="text" placeholder="Ваше имя" required>
+                        <div class="order__number-field">
+                            <input id="order-number" type="text" placeholder="Телефон">
+                            <span class="order__number-warning">Пожалуйста, введите телефон по образцу:
+                                +375ХХХХХХХХХ</span>
+                        </div>
                         <button class="order__btn">Отправить</button>
                     </div>
                 </form>
@@ -466,6 +478,9 @@
 
     <!-- Getting footer info from XML -->
     <script src="js/footerInfo.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
 
     <!-- Custom JS -->
     <script src="js/index.js"></script>

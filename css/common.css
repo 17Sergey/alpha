@@ -197,6 +197,40 @@ header .header__burger {
   background-color: #FBAF39;
   text-align: left;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.order .form__fields .order__number-field {
+  position: relative;
+}
+.order .form__fields .order__number-warning {
+  position: absolute;
+  bottom: -35px;
+  left: 10px;
+  font-size: 15px;
+  display: none;
+}
+.order .order__success {
+  padding: 30px 40px 20px 10px;
+  background-color: #fff;
+  border: 3px solid rgb(20, 212, 132);
+  border-radius: 10px;
+  color: #373A3C;
+  position: fixed;
+  z-index: 20;
+  right: 10px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+.order .order__success-close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 @media (max-width: 700px) {
   .order .form__fields {
@@ -207,6 +241,16 @@ header .header__burger {
 .order .form__fields .order__btn {
     margin: 10px 0;
     width: 90%;
+  }
+  .order .form__fields .order__number-field {
+    width: 90%;
+  }
+  .order .form__fields .order__number-field input {
+    width: 100%;
+  }
+  .order .form__fields .order__number-field .order__number-warning {
+    left: 0;
+    bottom: -25px;
   }
 }
 @media (max-width: 450px) {
@@ -219,6 +263,10 @@ header .header__burger {
     font-weight: 400;
     color: #373A3C;
     color: #FFFFFF;
+  }
+  .order .form__fields .order__number-field .order__number-warning {
+    left: 0;
+    bottom: -35px;
   }
 }
 

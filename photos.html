@@ -158,9 +158,17 @@
                 <div class="order__text">Мы перезвоним вам, чтобы уточнить все детали и оформить заявку.</div>
                 <form class="order__form">
                     <div class="form__fields">
-                        <input type="text" placeholder="Ваше имя">
-                        <input class="form__fields-phone" type="text" placeholder="Телефон">
+                        <input id="order-name" type="text" placeholder="Ваше имя" required>
+                        <div class="order__number-field">
+                            <input id="order-number" type="text" placeholder="Телефон">
+                            <span class="order__number-warning">Пожалуйста, введите телефон по образцу:
+                                +375ХХХХХХХХХ</span>
+                        </div>
                         <button class="order__btn">Отправить</button>
+                    </div>
+                    <div class="order__success">
+                        <img src="img/index/close.svg" alt="close-icon" class="order__success-close">
+                        <span>Данные успешно отправлены!</span>
                     </div>
                 </form>
             </div>
@@ -200,6 +208,9 @@
 
     <!-- Getting footer info from XML -->
     <script src="js/footerInfo.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
 
     <!-- Custom JS -->
     <script type="text/javascript" src="js/photos.js"></script>

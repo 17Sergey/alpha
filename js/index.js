@@ -58,16 +58,25 @@ $(document).ready(function () {
         $(selector).css("display", "flex");
 
         disableScroll();
+
+        // Hide up-arrow
+        $(".up-arrow").css("display", "none");
     })
     $(".description__modal-content img").click(function () {
         $(".description__modal").fadeOut();
         enableScroll();
+
+        // Show up-arrow
+        $(".up-arrow").css("display", "grid");
     })
     $(".description__modal").click(function (event) {
         if (event.target.className === "description__modal") {
             // $(".description__modal").fadeOut();
             $(this).fadeOut();
             enableScroll();
+
+            // Show up-arrow
+            $(".up-arrow").css("display", "grid");
         }
 
     })
@@ -102,38 +111,35 @@ $(document).ready(function () {
                     },
                     300
                 );
+
                 // Star animation
-                setTimeout(() => {
-                    $(this).find(".congrats-star").fadeIn(300);
-                    $(this).find(".congrats-star").animate(
-                        {
-                            top: "55"
-                        },
-                        300
-                    );
-                }, 700)
+                $(this).find(".congrats-star").fadeIn(300);
+                $(this).find(".congrats-star").animate(
+                    {
+                        top: "55"
+                    },
+                    300
+                );
+
                 // Square animation
-                setTimeout(() => {
-                    $(this).find(".congrats-square").fadeIn(300);
-                    $(this).find(".congrats-square").animate(
-                        {
-                            right: "-20",
-                            top: "55"
-                        },
-                        300
-                    );
-                }, 700)
+                $(this).find(".congrats-square").fadeIn(300);
+                $(this).find(".congrats-square").animate(
+                    {
+                        right: "-20",
+                        top: "55"
+                    },
+                    300
+                );
+
                 // Circle animation
-                setTimeout(() => {
-                    $(this).find(".congrats-circle").fadeIn(300);
-                    $(this).find(".congrats-circle").animate(
-                        {
-                            right: "-40",
-                            top: "60"
-                        },
-                        300
-                    );
-                }, 700)
+                $(this).find(".congrats-circle").fadeIn(300);
+                $(this).find(".congrats-circle").animate(
+                    {
+                        right: "-40",
+                        top: "60"
+                    },
+                    300
+                );
             }
         }
     )
@@ -143,58 +149,67 @@ $(document).ready(function () {
         function (e) {
             fillCurrentAndPreviousLines(this.id, SMOKE);
 
-            if (e.target === $(".point").last()[0]) { // $(".point").last()[0] = <div class="point"></div>
-                // Cylinder animation
-                $(this).find(".congrats-cylinder").fadeOut(300);
-                $(this).find(".congrats-cylinder").animate(
-                    {
-                        right: "0",
-                    },
-                    500
-                );
-                // Star animation
-                $(this).find(".congrats-star").fadeOut(300);
-                $(this).find(".congrats-star").animate(
-                    {
-                        top: "65",
-                    },
-                    500
-                );
-                // Square animation
-                $(this).find(".congrats-square").fadeOut(300);
-                $(this).find(".congrats-square").animate(
-                    {
-                        right: "-30",
-                        top: "65"
-                    },
-                    500
-                );
-                // Circle animation
-                $(this).find(".congrats-circle").fadeOut(300);
-                $(this).find(".congrats-circle").animate(
-                    {
-                        right: "-30",
-                        top: "65"
-                    },
-                    500
-                );
-            }
+            // Cylinder animation
+            $(this).find(".congrats-cylinder").fadeOut(300);
+            $(this).find(".congrats-cylinder").animate(
+                {
+                    right: "0",
+                },
+                500
+            );
+            // Star animation
+            $(this).find(".congrats-star").fadeOut(300);
+            $(this).find(".congrats-star").animate(
+                {
+                    top: "65",
+                },
+                500
+            );
+            // Square animation
+            $(this).find(".congrats-square").fadeOut(300);
+            $(this).find(".congrats-square").animate(
+                {
+                    right: "-30",
+                    top: "65"
+                },
+                500
+            );
+            // Circle animation
+            $(this).find(".congrats-circle").fadeOut(300);
+            $(this).find(".congrats-circle").animate(
+                {
+                    right: "-30",
+                    top: "65"
+                },
+                500
+            );
         }
     )
 
 
     // FAQ accordeon
-    let rotate = true;
-    let rotation;
+    let downRotated = "matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)";
+
     $(".question").click(function () {
-        $(this).children(".question__answer").slideToggle();
-        if (rotate) {
+
+        if ($(this).children(".question__img").css("transform") === downRotated) {
+            // Set the opposite rotation
             rotation = "rotate(-90deg)";
-            rotate = false;
-        } else {
+
+            // Reset open answers
+            $(".question").children(".question__answer").slideUp();
+            $(".question").children(".question__img").css("transform", "rotate(90deg)")
+
+            // Open clicked question answer
+            $(this).children(".question__answer").slideDown();
+        }
+        else {
+            // Set the opposite rotation
             rotation = "rotate(90deg)";
-            rotate = true;
+            // Close clicked question answer
+            $(this).children(".question__answer").slideUp();
         }
         $(this).children(".question__img").css("transform", rotation);
+
     })
 });
