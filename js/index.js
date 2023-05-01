@@ -192,7 +192,10 @@ $(document).ready(function () {
 
     $(".question").click(function () {
 
+        alert(1)
+
         if ($(this).children(".question__img").css("transform") === downRotated) {
+            alert(2)
             // Set the opposite rotation
             rotation = "rotate(-90deg)";
 
@@ -204,6 +207,7 @@ $(document).ready(function () {
             $(this).children(".question__answer").slideDown();
         }
         else {
+            alert(3);
             // Set the opposite rotation
             rotation = "rotate(90deg)";
             // Close clicked question answer
