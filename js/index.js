@@ -188,31 +188,21 @@ $(document).ready(function () {
 
 
     // FAQ accordeon
-    let downRotated = "matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)";
+    let downRotated = "matrix(0, 1, -1, 0, 0, 0)";
+    let isChrome = navigator.userAgentData?.brands?.some(b => b.brand === 'Google Chrome');
+
+    if (isChrome) downRotated = "matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)";
 
     $(".question").click(function () {
 
-        alert(1)
-
         if ($(this).children(".question__img").css("transform") === downRotated) {
-            alert(2)
-            // Set the opposite rotation
             rotation = "rotate(-90deg)";
-
-            // Reset open answers
-            $(".question").children(".question__answer").slideUp();
-            $(".question").children(".question__img").css("transform", "rotate(90deg)")
-
-            // Open clicked question answer
-            $(this).children(".question__answer").slideDown();
         }
         else {
-            alert(3);
-            // Set the opposite rotation
             rotation = "rotate(90deg)";
-            // Close clicked question answer
-            $(this).children(".question__answer").slideUp();
         }
+
+        $(this).children(".question__answer").slideToggle();
         $(this).children(".question__img").css("transform", rotation);
 
     })
