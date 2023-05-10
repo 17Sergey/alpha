@@ -238,11 +238,13 @@ main {
   display: none;
 }
 .scenarios .description__modal .description__modal-main {
+  padding: 10px;
+  padding-top: 30px;
   cursor: default;
   position: relative;
   z-index: 100;
   flex-basis: 810px;
-  height: 370px;
+  min-height: 370px;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;

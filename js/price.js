@@ -147,5 +147,4 @@ $(document).ready(function () {
         priceCriteries.ballsAmount = ballsAmount;
         calculatePrice();
     })
-
 });

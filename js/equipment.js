@@ -7,17 +7,17 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-              breakpoint: 960,
-              settings: {
-                slidesToShow: 2,
-              }
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                }
             },
             {
                 breakpoint: 700,
                 settings: {
-                  slidesToShow: 1,
+                    slidesToShow: 1,
                 }
-              },
+            },
         ],
     });
 

@@ -191,9 +191,11 @@ $(document).ready(function () {
     let downRotated = "matrix(0, 1, -1, 0, 0, 0)";
     let isChrome = navigator.userAgentData?.brands?.some(b => b.brand === 'Google Chrome');
 
-    if (isChrome) downRotated = "matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)";
+    // if (isChrome) downRotated = "matrix(6.12323e-17, 1, -1, 6.12323e-17, 0, 0)";
 
     $(".question").click(function () {
+
+        console.log(isChrome, downRotated)
 
         if ($(this).children(".question__img").css("transform") === downRotated) {
             rotation = "rotate(-90deg)";

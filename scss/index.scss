@@ -239,11 +239,13 @@ main {
         display: none;
 
         .description__modal-main {
+            padding: 10px;
+            padding-top: 30px;
             cursor: default;
             position: relative;
             z-index: 100;
             flex-basis: 810px;
-            height: 370px;
+            min-height: 370px;
             background-color: $smoke;
             display: flex;
             justify-content: center;
